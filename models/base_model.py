@@ -27,12 +27,12 @@ class BaseModel:
         return f"{[self.__class__.__name__]} {(self.id)} {self.__dict__}"
     def save_update(self):
         """update updated_at attribute with the current date and time """
-        from yourPackage import storage
+        #from yourPackage import storage
         updated_at = datetime.now()
-        storage.save()
+        #storage.save()
 
         """self.updated_at = self.updated_at.isoformat() """
-    def save_to_dict(self):
+    def to_dict(self):
         dictFormat = {}
         """add a class key to identify the class name of the instance attribute"""
         dictFormat["__class__"] = self.__class__.__name__
