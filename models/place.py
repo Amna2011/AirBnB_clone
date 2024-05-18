@@ -4,6 +4,7 @@ from city import City
 from amenity import Amenity
 from user import User
 class Place(BaseModel):
+    """my place class documentation """
     city_id = City.id()
     user_id = User.id
     place_name = BaseModel.name()

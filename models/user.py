@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#import models.base_model.BaseModel
 from base_model import BaseModel 
 class User(BaseModel):
     """my class user """

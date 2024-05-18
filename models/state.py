@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 from base_model import BaseModel 
 class State(BaseModel):
+    """my state class documentation """
     state_name = BaseModel.name()
     state_name = ""
     
