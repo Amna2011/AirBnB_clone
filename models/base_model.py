@@ -44,3 +44,6 @@ class BaseModel:
             else:
                 dictFormat[key] = val
         return dictFormat
+
+if __name__ == "__main__":
+    BaseModel()
