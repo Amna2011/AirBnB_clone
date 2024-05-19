@@ -1,26 +1,25 @@
 #!/usr/bin/python3
-import cmd
-
-#from pexpect import EOF
-import cmd
-
-class MyConsole(cmd.Cmd):
-    prompt = "(hbnb) "
-    HBNBCommand(cmd.Cmd)
-
+import cmd 
 class HBNBCommand(cmd.Cmd):
-    x = input()
-    if x == EOF or x == quit:
-        exit()
-    elif x == help:
-        print(
+    def __init__(self):
+        prompt = "(hbnb) "
+    def cmdloop(self):
+        """my documentation of cmd loop"""
+        while True:
+            x = input("(hbnb) ")
+
+            if x == "EOF" or x == "quit":
+                exit()
+            elif x == "help":
+                print(
         """Documented commands (type help <topic>):
 ========================================
 EOF  help  quit""")
-class MyConsole(cmd.Cmd):
-    prompt = "(hbnb) "
-    HBNBCommand(cmd.Cmd)
+            elif x == "\n":
+                pass
+            else:
+                pass
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
-    Myconsole(cmd.Cmd)
+
