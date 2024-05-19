@@ -10,6 +10,8 @@ class HBNBCommand(cmd.Cmd):
 
             if x == "EOF" or x == "quit":
                 exit()
+            elif x == "help quit":
+                print("Quit command to exit the program\n")
             elif x == "help":
                 print(
         """Documented commands (type help <topic>):
