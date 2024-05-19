@@ -23,3 +23,4 @@ class MyConsole(cmd.Cmd):
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
+    Myconsole(cmd.Cmd)
